@@ -5,5 +5,5 @@ Nesse repositório colocarei alguns projetos feitos em Python durante meu aprend
 
 Thank you for the visit!
 
-In this repository I will put some projects made in Python during my learning!
+In this repository I will put some projects made with Python during my learning!
 
