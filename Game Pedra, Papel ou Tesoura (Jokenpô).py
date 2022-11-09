@@ -33,5 +33,5 @@ elif escolha == 'Tesoura' and escolhido_pc == 'Tesoura':
     print('PC: {}\nVocê: {}\nEmpate!!!'.format(escolhido_pc, escolha))
 
 #Condição caso não escolha nenhuma
-if escolha not in escolha_pc:
+if escolha not in ['Pedra', 'Papel', 'Tesoura']:
     print('Escolha inválida, tente novamente!!!')
