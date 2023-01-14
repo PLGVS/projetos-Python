@@ -65,7 +65,7 @@ janela.geometry("450x600")
 #Contador da pontuação
 pontuacao = Label(janela)
 pontuacao["text"] = pontuacao["text"] = f"Vitórias:\nVocê:{vitorias_jogador} \nPC:{vitorias_pc}"
-pontuacao["font"] = ("Arial", 12)
+pontuacao["font"] = ("Arial", 12, "bold")
 pontuacao["background"] = "yellow"
 pontuacao.grid(column = 1, row = 0, pady = 10, padx = 10)
 
@@ -79,7 +79,7 @@ figura1.grid(column = 0, row = 0, padx = (50, 0))
 pedra = Button(janela, command = pedra)
 pedra["text"] = "Pedra"
 pedra["background"] = "yellow"
-pedra["font"] = ("Arial", 12)
+pedra["font"] = ("Arial", 12, "bold")
 pedra["height"] = 2
 pedra["width"] = 10
 pedra.grid(column = 0, row = 1, pady = 10, padx = (50, 0))
@@ -87,7 +87,7 @@ pedra.grid(column = 0, row = 1, pady = 10, padx = (50, 0))
 papel = Button(janela, command = papel)
 papel["text"] = "Papel"
 papel["background"] = "yellow"
-papel["font"] = ("Arial", 12)
+papel["font"] = ("Arial", 12, "bold")
 papel["height"] = 2
 papel["width"] = 10
 papel.grid(column = 0, row = 2, pady = 10, padx = (50, 0))
@@ -95,7 +95,7 @@ papel.grid(column = 0, row = 2, pady = 10, padx = (50, 0))
 tesoura = Button(janela, command = tesoura)
 tesoura["text"] = "Tesoura"
 tesoura["background"] = "yellow"
-tesoura["font"] = ("Arial", 12)
+tesoura["font"] = ("Arial", 12, "bold")
 tesoura["height"] = 2
 tesoura["width"] = 10
 tesoura.grid(column = 0, row = 3, pady = 10, padx = (50, 0))
