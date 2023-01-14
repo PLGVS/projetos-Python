@@ -59,14 +59,8 @@ def tesoura():
     
 janela = Tk()
 janela.title("Pedra, Papel ou Tesoura")
-janela.configure(bg = "blue")
-
-#Texto de explicação do jogo
-texto_explicacao = Label(janela)
-texto_explicacao["text"] = "Bem vindo ao Pedra, Papel ou Tesoura, escolha uma das opções abaixo para jogar:"
-texto_explicacao["background"] = "blue"
-texto_explicacao["font"] = ("Arial", 15)
-texto_explicacao.grid(column = 0, row = 0, pady = 10, padx = 10)
+janela.configure(bg = "black")
+janela.geometry("450x600")
 
 #Contador da pontuação
 pontuacao = Label(janela)
@@ -75,30 +69,51 @@ pontuacao["font"] = ("Arial", 12)
 pontuacao["background"] = "yellow"
 pontuacao.grid(column = 1, row = 0, pady = 10, padx = 10)
 
+#Logo de fundo
+logo = PhotoImage(file = "images/logo.png")
+logo = logo.subsample(1, 1)
+figura1 = Label(image = logo, bg = "black")
+figura1.grid(column = 0, row = 0, padx = (50, 0))
+
 #Botões de opção
 pedra = Button(janela, command = pedra)
 pedra["text"] = "Pedra"
 pedra["background"] = "yellow"
 pedra["font"] = ("Arial", 12)
-pedra.grid(column = 0, row = 1, pady = 10, padx = 10)
+pedra["height"] = 2
+pedra["width"] = 10
+pedra.grid(column = 0, row = 1, pady = 10, padx = (50, 0))
 
 papel = Button(janela, command = papel)
 papel["text"] = "Papel"
 papel["background"] = "yellow"
 papel["font"] = ("Arial", 12)
-papel.grid(column = 0, row = 2, pady = 10, padx = 10)
+papel["height"] = 2
+papel["width"] = 10
+papel.grid(column = 0, row = 2, pady = 10, padx = (50, 0))
 
 tesoura = Button(janela, command = tesoura)
 tesoura["text"] = "Tesoura"
 tesoura["background"] = "yellow"
 tesoura["font"] = ("Arial", 12)
-tesoura.grid(column = 0, row = 3, pady = 10, padx = 10)
+tesoura["height"] = 2
+tesoura["width"] = 10
+tesoura.grid(column = 0, row = 3, pady = 10, padx = (50, 0))
 
 #Texto que anuncia o resultado
 resultado = Label(janela)
 resultado["text"] = ""
 resultado["font"] = ("Arial", 20)
-resultado["background"] = "blue"
-resultado.grid(column = 0, row = 4, pady = 10, padx = 10)
+resultado["fg"] = "yellow"
+resultado["background"] = "black"
+resultado.grid(column = 0, row = 4, pady = 10, padx = (50, 0))
+
+#Assinatura
+assinatura = Label(janela)
+assinatura["text"] = "Desenvolvido por Pedro Luis Gaspar"
+assinatura["font"] = ("Arial", 12, "italic")
+assinatura["fg"] = "yellow"
+assinatura["background"] = "black"
+assinatura.grid(column = 0, row = 5, pady = 10, padx = (0, 100))
 
 janela.mainloop()
