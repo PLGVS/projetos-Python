@@ -11,13 +11,13 @@ def pedra():
     escolhido_pc = random.choice(escolha_pc)
     escolha = 'Pedra'
     if escolhido_pc == 'Tesoura':
-        resultado["text"] = f"Papel VS {escolhido_pc}\nVITÓRIA!!!"
+        resultado["text"] = f"Pedra VS {escolhido_pc}\nVITÓRIA!!!"
         vitorias_jogador += 1
     elif escolhido_pc == 'Papel':
-        resultado["text"] = f"Papel VS {escolhido_pc}\nDERROTA!!!"
+        resultado["text"] = f"Pedra VS {escolhido_pc}\nDERROTA!!!"
         vitorias_pc += 1
     elif escolhido_pc == 'Pedra':
-        resultado["text"] = f"Papel VS {escolhido_pc}\nEMPATE!!!"
+        resultado["text"] = f"Pedra VS {escolhido_pc}\nEMPATE!!!"
 
     pontuacao["text"] = f"Vitórias:\nVocê:{vitorias_jogador} \nPC:{vitorias_pc}"
 
